@@ -1,0 +1,89 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+header .containers{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 5%;
+    max-width: 350px;
+    background-color: aliceblue;
+    overflow-y: auto;
+    transition: all ease-in 0.3s;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.user img{
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+    
+}
+
+.heading h3{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+
+}
+
+.heading p{
+    font-family: sans-serif;
+}
+
+.heading p span{
+    color: purple;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul li{
+    line-height: 7;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: sans-serif;
+    position: relative;
+    color: black;
+
+}
+
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    transition: width 0.5s;
+
+}
+
+nav ul li a:hover::before{
+        width: 100%;
+}
+
+.container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        
+}
+
+div{
+    margin-left: 30%;
+    grid-column: span 6;
+}
+
